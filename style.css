@@ -3,6 +3,10 @@
    
 }
 
+body {
+    background-color: rgb(113, 184, 197);
+}
+
 .main-container {
     border: 2px solid black;
     border-radius: 10px;
@@ -22,45 +26,38 @@
     display: flex;
     justify-content: center;
     margin-right: 100px;
-    margin-left: 50px;
+    margin-left: 90px;
 }
 
 .container2 {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
     margin-right: 100px;
-    margin-left: 50px;
-    
-}
-
-.playerImage1 {
-    display: flex;
-    justify-content: center;
-    margin-right: 100px;
-    margin-left: 50px;
-    border: 10px solid black;
-}
-
-.playerImage2 {
-    display: flex;
-    justify-content: center;
-    margin-right: 100px;
-    margin-left: 50px;
-    border: 10px solid black;
+    margin-left: 90px;
     
 }
 
 
 .container3 {
-    margin-top: 300px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
 .roll-btn1 {
     margin-right: 100px;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 .roll-btn2 {
-    margin-left: 100px;
+    margin-right: 100px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+img  {
+    max-width: 100px;
+    display: flex;
+    justify-content: space-around;
 }
