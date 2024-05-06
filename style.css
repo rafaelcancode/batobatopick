@@ -1,0 +1,66 @@
+* {
+    text-align: center;
+   
+}
+
+.main-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.score1, .score2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 50px;
+
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 50px;
+    
+}
+
+.playerImage1 {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 50px;
+    border: 10px solid black;
+}
+
+.playerImage2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 50px;
+    border: 10px solid black;
+    
+}
+
+
+.container3 {
+    margin-top: 300px;
+    margin-bottom: 50px;
+}
+
+.roll-btn1 {
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.roll-btn2 {
+    margin-left: 100px;
+}
