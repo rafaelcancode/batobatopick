@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>calm galaxy</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main"></div>
     <div class="main-container">
-        <h1 class="title">BATO BATO PICK</h1>
-        <button class="btn" id="btn-reset" onclick="resetGame()">Reset Game</button>
-        <button class="btn" id="btn-reset" onclick="newRound()">New round</button>
-        <div class="scoreboard">
+      <h1 class="title">BATO BATO PICK</h1>
+      <button class="btn" id="btn-reset" onclick="resetGame()">
+        Reset Game
+      </button>
+      <button class="btn" id="btn-reset" onclick="newRound()">New round</button>
+      <div class="scoreboard">
         <p class="score" id="score1">0</p>
         <p class="score" id="score2">0</p>
+      </div>
+      <div class="question-container">
+        <div class="image-container">
+          <p id="player1">?</p>
         </div>
-        <div class="question-container">
-            
-            <div class="image-container">
-                <p id="player1">?</p>
-            </div>
-            <div class="image-container2">
-                <p id="player2">?</p>
-            </div>
+        <div class="image-container2">
+          <p id="player2">?</p>
         </div>
-        <div class="btn-container">
-            <button class="btn" onclick="gameFunction()">Player 1 roll</button>
-            <button class="btn" onclick="gameFunction()">Player 2 roll</button>
-        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn" onclick="gameFunction()">Player 1 roll</button>
+        <button class="btn" onclick="gameFunction()">Player 2 roll</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
