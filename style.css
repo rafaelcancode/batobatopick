@@ -145,10 +145,15 @@ p {
   /* CSS rules for large screens */
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  /* CSS rules for medium screens */
+@media only screen and (max-width: 1024px) {
+  .question-container {
+    margin-top: 10px; /* Adjust margin-top for smaller screens */
+  }
 }
 
+
 @media only screen and (max-width: 600px) {
-  /* CSS rules for small screens */
+  .question-container {
+    margin-top: 50px; /* Adjust margin-top for smaller screens */
+  }
 }
