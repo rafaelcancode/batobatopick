@@ -93,6 +93,7 @@ h1 {
     height: 100vh; /* Adjust height as needed */
     border: 1px solid white;  
     text-align: center;
+    flex-direction: row;
 }
 
 
@@ -106,7 +107,8 @@ h1 {
     display: flex; /* Use flexbox */
     justify-content: space-around; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin-top: 200px;
+    flex-direction: row; /* Display items in a row */
+    margin-top: 150px;
 }
 
 .image-container,
@@ -126,4 +128,15 @@ h1 {
 p {
     color: #c5840c;
     font-size: 50px;
+}
+
+.scoreboard {
+  display: flex; /* Use flexbox */
+    justify-content: space-around; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: row; /* Display items in a row */
+}
+
+.score {
+  font-size: 80px;
 }
