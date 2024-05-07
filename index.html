@@ -3,35 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Browser Game</title>
-    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
+    <title>calm galaxy</title>
 </head>
 
 <body>
-    <!-- Your content goes here -->
+    <div class="main"></div>
     <div class="main-container">
-    <h1>Bato Bato Pick</h1>
-
-    <div class="container1">
-        <h3 id="player-score1" class="score1">Win</h3>
-        <h3 id="player-score2" class="score2">Win</h3>
+        <h1 class="title">BATO BATO PICK</h1>
+        <button class="btn" id="btn-reset" onclick="resetGame()">Reset Game</button>
+        <div class="question-container">
+            <!-- <button>Reset Game</button> -->
+            <div class="image-container">
+                <p id="player1">?</p>
+            </div>
+            <div class="image-container2">
+                <p id="player2">?</p>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="gameFunction()">Player 1 roll</button>
+            <button class="btn" onclick="gameFunction()">Player 2 roll</button>
+        </div>
     </div>
 
-    <div class="container2">
-    <div class="playerImage1">Dick</div>
-    <div  class="playerImage2">Dick</div>
-    </div>
-
-    <div class="container3">
-    <button class="roll-btn1" id="player1-btn">Roll</button>
-    <button class="roll-btn2" id="player2-btn">Roll</button>
-    </div>
-    </div>
-
-    <!-- Link to your JavaScript file (optional) -->
     <script src="script.js"></script>
 </body>
 
