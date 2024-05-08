@@ -21,7 +21,7 @@ let score1Element = document.getElementById("score1");
 let score2Element = document.getElementById("score2");
 let playerScore1 = 0; // Initialize player 1's score
 let playerScore2 = 0; // Initialize player 2's score
-let scoreis3 = false;
+let gameOver = false;
 
 let choices = ["Bato", "papel", "Gunting"];
 
@@ -41,6 +41,7 @@ function gameFunction() {
       resultParagraph2.textContent === "Bato"
     ) {
       alert("it's a tie");
+      newRound();
     } else if (
       resultParagraph1.textContent === "Bato" &&
       resultParagraph2.textContent === "papel"
@@ -48,6 +49,8 @@ function gameFunction() {
       alert("Player 2 wins!");
       playerScore2++; // Increment player 2's score
       score2Element.textContent = playerScore2;
+      resultParagraph2.textContent = "?";
+      resultParagraph1.textContent = "?";
     } else if (
       resultParagraph1.textContent === "Bato" &&
       resultParagraph2.textContent === "Gunting"
@@ -55,11 +58,14 @@ function gameFunction() {
       alert("Player 1 wins");
       playerScore1++; // Increment player 2's score
       score1Element.textContent = playerScore1;
+      resultParagraph1.textContent = "?";
+      resultParagraph2.textContent = "?";
     } else if (
       resultParagraph1.textContent === "papel" &&
       resultParagraph2.textContent === "papel"
     ) {
       alert("it's a tie!");
+      newRound();
     } else if (
       resultParagraph1.textContent === "papel" &&
       resultParagraph2.textContent === "Bato"
@@ -67,6 +73,8 @@ function gameFunction() {
       alert("Player 1 wins");
       playerScore1++; // Increment player 2's score
       score1Element.textContent = playerScore1;
+      resultParagraph1.textContent = "?";
+      resultParagraph2.textContent = "?";
     } else if (
       resultParagraph1.textContent === "papel" &&
       resultParagraph2.textContent === "Gunting"
@@ -74,11 +82,14 @@ function gameFunction() {
       alert("Player 2 wins!");
       playerScore2++; // Increment player 2's score
       score2Element.textContent = playerScore2;
+      resultParagraph1.textContent = "?";
+      resultParagraph2.textContent = "?";
     } else if (
       resultParagraph1.textContent === "Gunting" &&
       resultParagraph2.textContent === "Gunting"
     ) {
       alert("it's a tie");
+      newRound();
     } else if (
       resultParagraph1.textContent === "Gunting" &&
       resultParagraph2.textContent === "Bato"
@@ -86,6 +97,8 @@ function gameFunction() {
       alert("Player 2 wins!");
       playerScore2++; // Increment player 2's score
       score2Element.textContent = playerScore2;
+      resultParagraph1.textContent = "?";
+      resultParagraph2.textContent = "?";
     } else if (
       resultParagraph1.textContent === "Gunting" &&
       resultParagraph2.textContent === "papel"
@@ -93,20 +106,25 @@ function gameFunction() {
       alert("Player 1 wins");
       playerScore1++; // Increment player 2's score
       score1Element.textContent = playerScore1;
+      resultParagraph1.textContent = "?";
+      resultParagraph2.textContent = "?";
     }
     if (playerScore1 === 3) {
       alert("Player 1 Wins the Game!");
       resultParagraph1.textContent = "WINNER!!!";
       resultParagraph1.classList.add("blinking-ember");
+      gameOver = true;
     } else if (playerScore2 === 3) {
       alert("Player 2 Wins the Game!");
       resultParagraph2.textContent = "WINNER!!!";
       resultParagraph2.classList.add("blinking-ember");
+      gameOver = true;
     }
   }, 400); // Adjust the delay time if necessary
 }
 
 function newRound() {
+  if (gameOver) return;
   resultParagraph1.textContent = "?";
   resultParagraph2.textContent = "?";
 }
