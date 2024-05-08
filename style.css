@@ -160,6 +160,6 @@ p {
 
 @media only screen and (max-width: 1920px) {
   .question-container {
-    margin-top: 45px; /* Adjust margin-top for smaller screens */
+    margin-top: 20px; /* Adjust margin-top for smaller screens */
   }
 }
