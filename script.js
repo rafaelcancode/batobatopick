@@ -21,6 +21,7 @@ let score1Element = document.getElementById("score1");
 let score2Element = document.getElementById("score2");
 let playerScore1 = 0; // Initialize player 1's score
 let playerScore2 = 0; // Initialize player 2's score
+let scoreis3 = false;
 
 let choices = ["Bato", "papel", "Gunting"];
 
@@ -92,6 +93,15 @@ function gameFunction() {
       alert("Player 1 wins");
       playerScore1++; // Increment player 2's score
       score1Element.textContent = playerScore1;
+    }
+    if (playerScore1 === 3) {
+      alert("Player 1 Wins the Game!");
+      resultParagraph1.textContent = "WINNER!!!";
+      resultParagraph1.classList.add("blinking-ember");
+    } else if (playerScore2 === 3) {
+      alert("Player 2 Wins the Game!");
+      resultParagraph2.textContent = "WINNER!!!";
+      resultParagraph2.classList.add("blinking-ember");
     }
   }, 400); // Adjust the delay time if necessary
 }

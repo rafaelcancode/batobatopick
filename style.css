@@ -141,6 +141,22 @@ p {
   font-size: 80px;
 }
 
+@keyframes emberAura {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(221, 68, 8, 0.849);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 187, 0, 0.952);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(161, 5, 5, 0.644);
+  }
+}
+
+.blinking-ember {
+  animation: emberAura 1s infinite;
+}
+
 @media only screen and (min-width: 1025px) {
   /* CSS rules for large screens */
 }
